@@ -3,9 +3,8 @@
 var  chalk = require('chalk');
 // 引入mongoose
 var mongoose = require("mongoose");
-// 连接数据库 ,数据库的名称可以是不存在 创建一个 mydb 数据库
-mongoose.connect("mongodb://yanhongfei:yhf199012@127.0.0.1:27017/yhf_db");
- 
+// 连接数据库 ,数据库的名称可以是不存在 创建一个 database 数据库
+mongoose.connect("mongodb://yanhongfei:199012@127.0.0.1:27017/datadbbase");
 // 连接失败
 mongoose.connection.on("error", function(err){
     console.log(
